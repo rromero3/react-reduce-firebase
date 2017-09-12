@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-firebase-boilerplate",
+  "name": "ofertasHoy",
   "version": "1.0.0",
-  "description": "Simple boilerplate for Reactjs with Redux and Firebase",
+  "description": "Alpha de Ofertas Hoy",
   "main": "index.jsx",
   "repository": "git@github.com:btomashvili/react-redux-firebase-boilerplate.git",
   "scripts": {
@@ -12,7 +12,7 @@
     "test:watch": "npm run test -- --watch",
     "lint": "./node_modules/.bin/eslint src"
   },
-  "author": "Beka Tomashvili",
+  "author": "Raul Romero",
   "contributors": [
     {
       "name": "Alexander Wong",
@@ -73,6 +73,7 @@
     "react-router": "^2.0.0-rc5",
     "redux": "^3.0.4",
     "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "superagent": "^3.6.0"
   }
 }

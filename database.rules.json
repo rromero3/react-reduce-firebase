@@ -1,10 +1,8 @@
 {
   "rules": {
-    ".read": false,
-    ".write": false,
-    "words": {
-      ".read": true,
-      ".write": true
+    "todayOffers": {
+      ".write": "auth !== null",
+      ".read": true
     },
     "dev": {
       ".read": true,
@@ -13,6 +11,8 @@
     "staging": {
       ".read": true,
       ".write": true
-    }
+    },
+    ".read": true,
+    ".write": false
   }
 }

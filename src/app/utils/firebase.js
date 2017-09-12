@@ -147,6 +147,9 @@ const FireBaseTools = {
    * @returns {!firebase.database.Reference|firebase.database.Reference}
    */
     getDatabaseReference: path => firebaseDb.ref(path),
+
+    getServerTimeStamp: () => { 
+      return firebase.database.ServerValue.TIMESTAMP;},
 };
 
 export default FireBaseTools;

@@ -59,14 +59,17 @@ class App extends Component {
                                 <span className="icon-bar" />
                                 <span className="icon-bar" />
                             </button>
-                            <Link to="/" className="navbar-brand">Firebase & Redux boilerplate</Link>
+                            <Link to="/" className="navbar-brand">Ofertas Hoy</Link>
 
                         </div>
                         <nav className="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                             <ul className="nav navbar-nav">
                                 <li><Link to="/"> Home</Link></li>
-                ,
-              </ul>
+                            ,
+                            </ul>
+                            <form class="navbar-form navbar-right">
+                                <input type="text" class="form-control" placeholder="Search..."> </input>
+                             </form>
                             <ul className="nav navbar-nav navbar-right">
                                 { this.renderUserMenu(this.props.currentUser) }
                             </ul>
