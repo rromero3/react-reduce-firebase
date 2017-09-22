@@ -47,21 +47,21 @@ class UserProfile extends Component {
                     <p>{this.state.message}</p>
                     <br />
                     <div className="form-group">
-                        <label htmlFor="email">Email: </label>
+                        <label htmlFor="email">Correo electronico: </label>
                         <input
                           type="text" defaultValue={this.props.currentUser.email}
-                          className="form-control" id="email" ref="email" placeholder="Email" name="email"
+                          className="form-control" id="email" ref="email" placeholder="ofertas@hoy.com" name="email"
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="displayName">Display name: </label>
+                        <label htmlFor="displayName">Nombre del perfil: </label>
                         <input
                           type="text" defaultValue={this.props.currentUser.displayName}
-                          className="form-control" ref="displayName" id="displayName" placeholder="Display name"
+                          className="form-control" ref="displayName" id="displayName" placeholder="Nombre Apellido"
                           name="displayName"
                         />
                     </div>
-                    <button type="submit" className="btn btn-primary">Update</button>
+                    <button type="submit" className="btn btn-primary">Guardar</button>
                 </form>
                 <ChangePassword />
             </div>

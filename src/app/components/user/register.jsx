@@ -36,16 +36,16 @@ class UserRegister extends Component {
                     <p>{this.state.message}</p>
                     <h2>Register</h2>
                     <div className="form-group">
-                        <label htmlFor="txtRegEmail">Email address</label>
+                        <label htmlFor="txtRegEmail">Correo electronico</label>
                         <input
-                          type="email" className="form-control" ref="email" id="txtEmail" placeholder="Enter email"
+                          type="email" className="form-control" ref="email" id="txtEmail" placeholder="ofertas@hoy.com"
                           name="email"
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="txtRegPass">Password</label>
+                        <label htmlFor="txtRegPass">Contraseña</label>
                         <input
-                          type="password" className="form-control" ref="password" id="txtPass" placeholder="Password"
+                          type="password" className="form-control" ref="password" id="txtPass" placeholder="Contraseña"
                           name="password"
                         />
                     </div>
@@ -58,20 +58,10 @@ class UserRegister extends Component {
                       }} data-provider="facebook"
                     >Facebook</a>
                     <a
-                      href="#" className="btn btn-block btn-social btn-twitter" onClick={() => {
-                          this.loginWithProvider('twitter');
-                      }} data-provider="twitter"
-                    >Twitter</a>
-                    <a
                       href="#" className="btn btn-block btn-social btn-google" onClick={() => {
                           this.loginWithProvider('google');
                       }} data-provider="twitter"
                     >Google</a>
-                    <a
-                      href="#" className="btn btn-block btn-social btn-github" onClick={() => {
-                          this.loginWithProvider('github');
-                      }} data-provider="twitter"
-                    >Github</a>
 
                 </form>
             </div>

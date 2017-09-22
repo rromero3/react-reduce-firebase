@@ -31,7 +31,7 @@ class ResetPassword extends Component {
                 <form role="form" onSubmit={this.onFormSubmit}>
                   <h4>{this.state.message}</h4>
                   <div className="form-group">
-                    <label htmlFor="txtEmail">Email address</label>
+                    <label htmlFor="txtEmail">Correo electronico:</label>
                     <input
                     type="email" className="form-control" id="txtEmail" ref="email" placeholder="Enter email"
                     name="email"

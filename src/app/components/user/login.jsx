@@ -50,47 +50,36 @@ class UserLogin extends Component {
                     </p>
                     <h2>Login</h2>
                     <div className="form-group">
-                        <label htmlFor="txtEmail">Email address</label>
+                        <label htmlFor="txtEmail">Correo Electronico</label>
                         <input
-                          type="email" className="form-control" id="txtEmail" ref="email" placeholder="Enter email"
+                          type="email" className="form-control" id="txtEmail" ref="email" placeholder="ofertas@hoy.com"
                           name="email"
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="txtPass">Password</label>
+                        <label htmlFor="txtPass">Contraseña</label>
                         <input
-                          type="password" className="form-control" id="txtPass" ref="password" placeholder="Password"
+                          type="password" className="form-control" id="txtPass" ref="password" placeholder="Contraseña"
                           name="password"
                         />
                     </div>
-                    <button type="submit" className="btn btn-default btn-block">Login</button>
+                    <button type="submit" className="btn btn-default btn-block">Iniciar Sesión</button>
                     <br />
-                    <h5><Link to="/reset">Forgot password?</Link></h5>
+                    <h5><Link to="/reset">Te olvidaste tu contraseña?</Link></h5>
 
-                    <h4>Login with</h4>
+                    <h4>Inicie sesión con su cuenta de:</h4>
                     <a
                       href="#" className="btn btn-block btn-social btn-facebook" onClick={() => {
                           this.loginWithProvider('facebook');
                       }} data-provider="facebook"
                     >Facebook</a>
 
-                    <a
-                      href="#" className="btn btn-block btn-social btn-twitter" onClick={() => {
-                          this.loginWithProvider('twitter');
-                      }} data-provider="twitter"
-                    >Twitter</a>
 
                     <a
                       href="#" className="btn btn-block btn-social btn-google" onClick={() => {
                           this.loginWithProvider('google');
                       }} data-provider="twitter"
                     >Google</a>
-
-                    <a
-                      href="#" className="btn btn-block btn-social btn-github" onClick={() => {
-                          this.loginWithProvider('github');
-                      }} data-provider="twitter"
-                    >Github</a>
 
                 </form>
             </div>

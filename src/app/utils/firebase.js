@@ -4,6 +4,7 @@ import { FIREBASE_CONFIG } from '../config';
 export const firebaseApp = firebase.initializeApp(FIREBASE_CONFIG);
 export const firebaseAuth = firebaseApp.auth();
 export const firebaseDb = firebaseApp.database();
+export const firebaseStorage = firebaseApp.storage();
 
 const FireBaseTools = {
 
@@ -147,6 +148,10 @@ const FireBaseTools = {
    * @returns {!firebase.database.Reference|firebase.database.Reference}
    */
     getDatabaseReference: path => firebaseDb.ref(path),
+
+    getStorageReference: () => firebaseStorage.ref(),
+
+    getChildStorageReference: path => firebaseStorage.ref().child(path),
 
     getServerTimeStamp: () => { 
       return firebase.database.ServerValue.TIMESTAMP;},

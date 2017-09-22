@@ -9,6 +9,8 @@ import UserRegister from './components/user/register';
 import UserProfile from './components/user/profile';
 import ResetPassword from './components/user/reset_password';
 import requireAuth from './utils/authenticated';
+import SupplierProfile from './components/supplier/supplierProfile';
+
 
 export default (
     <Route path="/" component={App}>
@@ -18,6 +20,7 @@ export default (
         <Route path="/register" component={UserRegister} />
         <Route path="/reset" component={ResetPassword} />
         <Route path="/profile" component={UserProfile} onEnter={requireAuth} />
+        <Route path="/supplierProfile" component={SupplierProfile} onEnter={requireAuth} />
     </Route>
 
 );

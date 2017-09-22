@@ -7,7 +7,7 @@ const ResultList = (props) => {
   });
 
   return (
-    <div className="result-list row">{resultItems}</div>
+    <div className="result-list row col-md-12">{resultItems}</div>
   );
 };
 
